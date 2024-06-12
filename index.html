@@ -2,109 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Davila</title>
-    <link rel="stylesheet" href="style/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Davila</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <a class="logo" href="index.html">
-                <img src="" alt="">
-                <h2>Jose Davila</h2>
-            </a>
-            <nav class="menu">
-                <a href="#home">Inicio</a>
-                <a href="#portfolio">Portafolio</a>
-                <a href="#skill">Skill</a>
-                <a href="#about">Acerca de</a>
-            </nav>
-            <nav class="icons">
-                <a href="#" title="linkedin" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="#666666"
-                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
-                    </svg>
-                </a>
-                <a href="#" title="github" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="#666666"
-                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
-                    </svg>
-                </a>
-            </nav>
+  <header>
+    <div class="header-container">
+      <nav class="menu">
+        <a class="button-neon" href="#portfolio">Experiencia</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#skill">Skill</a>
+        <a href="#about">Sobre mi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--Section hero-->
+    <section id="home" class="hero">
+
+      <div class="hero__container">
+
+        <div class="hero__header">
+          <div class="hero__image-container">
+            <img src="images/yo.png" alt="Imagen de Jose Davila" class="hero__image">
+          </div>
+          <div class="hero__header-icons">
+            <div class="icon-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#666666"
+                  d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21zm6-15h4V4h-4z" />
+              </svg>
+              <span>Disponible</span>
+            </div>
+            <div class="icon-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#666666"
+                  d="M16.997 15c-1.601 0-2.446-.676-3.125-1.219c-.567-.453-.977-.781-1.878-.781c-.898 0-1.287.311-1.874.78c-.679.544-1.524 1.22-3.125 1.22s-2.444-.676-3.123-1.22C3.285 13.311 2.897 13 2 13v5c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-5c-.899 0-1.288.311-1.876.781c-.68.543-1.525 1.219-3.127 1.219M19 5h-6V2h-2v3H5C3.346 5 2 6.346 2 8v3c1.6 0 2.443.676 3.122 1.22c.587.469.975.78 1.873.78c.899 0 1.287-.311 1.875-.781c.679-.543 1.524-1.219 3.124-1.219c1.602 0 2.447.676 3.127 1.219c.588.47.977.781 1.876.781c.9 0 1.311-.328 1.878-.781C19.554 11.676 20.399 11 22 11V8c0-1.654-1.346-3-3-3" />
+              </svg>
+              <span>Junio 12</span>
+            </div>
+          </div>
         </div>
-    </header>
 
-    <main>
+        <h1 class="hero__title">Soy <span class="hero__title--highlight">Jose Davila</span></h1>
+        <h2 class="hero__subtitle">Ingeniero de software | Desarrollador Front End Junior✨</h2>
+        <p class="hero__description">+6 meses de experiencia. de Magangue Bolívar, Colombia 🇨🇴.</p>
+        <div class="hero__contact">
+          <div class="hero__contact-email--container">
+            <p class="hero__contact-email">josedavilasalcedo97@gmail.com</p>
+            <button class="hero__contact-button" onclick="copyEmail()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                <path fill="#666666"
+                  d="M184 64H40a8 8 0 0 0-8 8v144a8 8 0 0 0 8 8h144a8 8 0 0 0 8-8V72a8 8 0 0 0-8-8m-8 144H48V80h128Zm48-168v144a8 8 0 0 1-16 0V48H72a8 8 0 0 1 0-16h144a8 8 0 0 1 8 8" />
+              </svg>
+            </button>
+          </div>
+          <a href="ruta/al/CV.pdf" class="hero__contact-download yellow-boton" download><span>Descargar CV</span></a>
+          <a href="#" class="hero__contact-download blue-boton"><span>linkedin</span></a>
+        </div>
+      </div>
+    </section>
+    <!--Section hero end-->
 
-        <!--Section hero-->
-        <section id="home" class="hero">
-            <!--hero -->
-            <div class="hero__container">
-                <h1 class="hero__title">Jose Davila</h1>
-                <h3 class="hero__subtitle">Software Engineer | Desarrollador Front End Junior✨</h3>
-                <p class="hero__description">Mi pasión por el diseño web fusiona lo técnico con lo estético para crear
-                    experiencias digitales únicas.</p>
-                <div class="contact">
-                    <p class="contact__email">josedavilasalcedo97@gmail.com</p>
-                    <button class="contact__copy-button" onclick="copyEmail()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
-                            <path fill="#666666"
-                                d="M184 64H40a8 8 0 0 0-8 8v144a8 8 0 0 0 8 8h144a8 8 0 0 0 8-8V72a8 8 0 0 0-8-8m-8 144H48V80h128Zm48-168v144a8 8 0 0 1-16 0V48H72a8 8 0 0 1 0-16h144a8 8 0 0 1 8 8" />
-                        </svg>
-                    </button>
-                    <a href="ruta/al/CV.pdf" class="contact__button" download>Descargar CV</a>
-                </div>
+    <!--Section about me-->
+    <section id="about" class="about">
+      <div class="about__content">
+        <h1>soy</h1>
+      </div>
+      <div class="about__social">
+        <h3>Redes sociales</h3>
+      </div>
+    </section>
+    <!--Section about me end-->
+
+    <!--Section portfolio-->
+    <section id="portfolio" class="portfolio">
+      <h2 class="portfolio__title">Proyectos</h2>
+      <div class="portfolio__cards">
+        <!--cards 1-->
+        <div class="portfolio__card">
+          <div class="portfolio__card--header">
+            <h3 class="portfolio__card-title">Buscador de películas</h3>
+            <div class="portfolio__card--skill">
+
             </div>
-            <!--hero image-->
-            <div class="hero__img--container">
-                <img src="" alt="" class="hero__img">
-            </div>
-        </section>
-        <!--Section hero end-->
+          </div>
+          <img src="ruta/a/la/imagen1.jpg" alt="Imagen del Proyecto 1" class="portfolio__card-image">
+          <p class="portfolio__card-description">Descripción del Proyecto 1.</p>
+          <div class="portfolio__icons">
 
-        <!--Section portfolio-->
-        <section id="portfolio" class="portfolio">
-            <h2 class="portfolio__title">Proyectos</h2>
-            <div class="portfolio__cards">
-                <!--cards 1-->
-                <div class="portfolio__card">
-                    <h3 class="portfolio__card-title">Buscador de películas</h3>
-                    <img src="ruta/a/la/imagen1.jpg" alt="Imagen del Proyecto 1" class="portfolio__card-image">
-                    <p class="portfolio__card-description">Descripción del Proyecto 1.</p>
-                    <div class="portfolio__icons">
-                        
-                    </div>
-                    <div class="portfolio__card-links">
-                        <a href="" class="portfolio__card-link">Visitar</a>
-                        <a href="" class="portfolio__card-link">Código</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Section portfolio end-->
+          </div>
+          <div class="portfolio__card-links">
+            <a href="" class="portfolio__card-link">Visitar</a>
+            <a href="" class="portfolio__card-link">Código</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section portfolio end-->
 
-        <!--Skill-->
-        <section id="skill" class="skill">
-            <h3>Skill</h3>
-            <div class="skill__container">
-            
-            </div>
-        </section>
-        <!--Skill end-->
+    <!--Skill-->
+    <section id="skill" class="skill">
+      <h3>Skill</h3>
+      <div class="skill__container">
 
-        <!--Section about me-->
-          <section id="about" class="about">
-            <h2>Acerca de mi</h2>
-          </section>
-        <!--Section about me end-->
+      </div>
+    </section>
+    <!--Skill end-->
+  </main>
 
-    </main>
-
-    <script src="assets/main.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,259 @@
 * {
-    margin: 0;
-    box-sizing: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvb;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01 !important;
+    scroll-behavior: smooth !important;
+    transition: none;
+  }
+}
+
+:root {
+  --bg-color: #20252C;
+  --firt-color: #ffc400;
+  --color-1: #FAFAE7;
+  --color-w-1: rgb(230, 232, 233);
+  --font-1: "Onest",
+    sans-serif;
+}
+
+/* CSS reutilizable*/
+
+
+body {
+  /* background-color: var(--bg-color); */
+  background: linear-gradient(to bottom, #181B33, #030712);
+  color: var(--color-1);
+  font-family: var(--font-1);
+}
+
+/* Estilos para el header*/
+
+header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #181B33;
+  backdrop-filter: blur(10px);
+  /* Efecto de desenfoque */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-w-1);
+  border-radius: 3px;
+  transition: all 0.2s;
+
+}
+
+.menu a:hover {
+  color: var(--firt-color);
+}
+
+/* Estilos para el main*/
+
+main {
+  margin: 0 auto;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  max-width: 42rem;
+}
+
+/* Estilos para el hero*/
+.hero__container {
+  line-height: 1.6rem;
+}
+
+.hero__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__image-container {
+  width: 15%;
+  margin-bottom: 1rem;
+}
+
+.hero__image {
+  border-radius: 50%;
+}
+
+.hero__header-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* Espacio entre el ícono y el texto */
+}
+
+.icon-text span {
+  font-size: 16px;
+  color: #eded;
+  /* Color del texto */
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero__title--highlight {
+  /* color: var(--firt-color); */
+}
+
+.hero__subtitle,
+.hero__description {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.hero__subtitle {
+  color: #f5d466;
+}
+
+.hero__contact {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__contact-email--container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hero__contact-email {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background-color: #49505754;
+  color: #ffffff;
+}
+
+.hero__contact-button {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__contact-button:hover svg path {
+  fill: var(--firt-color);
+}
+
+.hero__contact-download {
+  display: inline-block;
+  padding: 4px 8px;
+  color: #f5d466;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  transition: color 0.4s ease;
+}
+
+.hero__contact-download::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ffc400;
+  transition: width 0.4s ease;
+  z-index: 0;
+}
+
+.hero__contact-download:hover::before {
+  width: 100%;
+}
+
+.hero__contact-download:hover {
+  color: #181B33;
+}
+
+.hero__contact-download span {
+  position: relative;
+  z-index: 1;
 }
