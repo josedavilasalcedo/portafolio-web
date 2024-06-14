@@ -7,6 +7,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -48,7 +49,6 @@ svg {
     animation-duration: 0.01 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01 !important;
-    scroll-behavior: smooth !important;
     transition: none;
   }
 }
@@ -66,7 +66,6 @@ svg {
 
 
 body {
-  /* background-color: var(--bg-color); */
   background: linear-gradient(to bottom, #181B33, #030712);
   color: var(--color-1);
   font-family: var(--font-1);
@@ -118,14 +117,14 @@ header {
 
 main {
   margin: 0 auto;
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-  max-width: 42rem;
+
+  max-width: 50rem;
 }
 
 /* Estilos para el hero*/
 .hero__container {
   line-height: 1.6rem;
+  padding-top: 9rem;
 }
 
 .hero__header {
@@ -145,7 +144,7 @@ main {
 
 .hero__header-icons {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
 }
 
@@ -153,23 +152,22 @@ main {
   display: flex;
   align-items: center;
   gap: 5px;
-  /* Espacio entre el ícono y el texto */
 }
+
 
 .icon-text span {
   font-size: 16px;
   color: #eded;
-  /* Color del texto */
+}
+
+.icon__text-color span {
+  color: #ffc400;
 }
 
 .hero__title {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 1.5rem;
-}
-
-.hero__title--highlight {
-  /* color: var(--firt-color); */
 }
 
 .hero__subtitle,
@@ -256,4 +254,197 @@ main {
 .hero__contact-download span {
   position: relative;
   z-index: 1;
+}
+
+/* Estilos para la experiencia laboral */
+.experience {
+  padding-top: 9rem;
+}
+
+.experience__title {
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.experience__work {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.experience__header {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  line-height: 28px;
+}
+
+time {
+  font-size: 14px;
+  color: #f5d466;
+}
+
+.experience__title-work {
+  color: var(--firt-color);
+  font-size: 20px;
+}
+
+.experience__content {
+  flex: 1 1 auto;
+}
+
+.experience__subtitle {
+  font-size: 18px;
+}
+
+.experience__title-work,
+.experience__subtitle,
+time {
+  margin: 0;
+}
+
+.experience__work p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Estilos para el portafolio*/
+.project {
+  padding-top: 9rem;
+}
+
+.portfolio__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.portfolio__image {
+  width: 50%;
+}
+
+.portfolio__image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio__description {
+  width: 50%;
+}
+
+.portfolio__description h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.portfolio__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #20252c6c;
+  margin-bottom: 1rem;
+}
+
+.portfolio__description p {
+  margin-bottom: 1rem;
+  line-height: 25px;
+}
+
+.portfolio__buton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  padding: 8px 12px;
+  color: #FAFAE7;
+  border: 2px solid transparent;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+}
+
+.button-1:hover {
+  border: 2px solid var(--firt-color);
+}
+
+/* Estilos para skills*/
+.skill {
+  padding-top: 9rem;
+}
+
+.skill__container {
+  display: flex;
+  justify-items: center;
+  gap: 20px;
+}
+
+.skill__icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #1F2A38, #f5d46623);
+}
+
+/* Estilos para sobre mi*/
+.about {
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+}
+
+.experience__description {
+  display: flex;
+}
+
+.experience__p {
+  flex: 7;
+  padding-right: 20px;
+}
+
+.experience__p p {
+  color: #FAFAE7;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.experience__img {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience__img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #181B33;
+  overflow: hidden;
+  transform: rotate(5deg);
+}
+
+strong {
+  color: #f5d466;
 }
