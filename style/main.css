@@ -81,7 +81,6 @@ header {
   z-index: 1000;
   background-color: #181B33;
   backdrop-filter: blur(10px);
-  /* Efecto de desenfoque */
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -92,6 +91,30 @@ header {
   max-width: 60%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.icon-color {
+  color: #FAFAE7;
+}
+
+.menu-toggle .fa-bars {
+  display: block;
+}
+
+.menu-toggle .fa-times {
+  display: none;
 }
 
 .menu {
@@ -106,7 +129,6 @@ header {
   color: var(--color-w-1);
   border-radius: 3px;
   transition: all 0.2s;
-
 }
 
 .menu a:hover {
@@ -217,7 +239,9 @@ main {
 }
 
 .hero__contact-download {
-  display: inline-block;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
   padding: 4px 8px;
   color: #f5d466;
   text-decoration: none;
@@ -250,6 +274,7 @@ main {
 .hero__contact-download:hover {
   color: #181B33;
 }
+
 
 .hero__contact-download span {
   position: relative;
@@ -409,7 +434,7 @@ time {
 /* Estilos para sobre mi*/
 .about {
   padding-top: 9rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .experience__description {
@@ -447,4 +472,113 @@ time {
 
 strong {
   color: #f5d466;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+  main {
+    width: 90%;
+  }
+
+  .header-container {
+    max-width: 95%;
+    justify-content: end;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #181B33;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu-toggle.open .fa-bars {
+    display: none;
+  }
+
+  .menu-toggle.open .fa-times {
+    display: block;
+  }
+
+  .hero__container {
+    padding-top: 7rem;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
+
+  .hero__contact {
+    flex-wrap: wrap;
+  }
+
+  .experience,
+  .project,
+  .skill,
+  .about {
+    padding-top: 5.5rem;
+  }
+
+  .experience__title {
+    font-size: 16px;
+  }
+
+  .experience__work {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .portfolio__item {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .portfolio__image,
+  .portfolio__description {
+    width: 100%;
+  }
+
+  .skill__container {
+    flex-wrap: wrap;
+  }
+
+  .experience__img img {
+    max-width: 80%;
+  }
+
+  .experience__description {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
