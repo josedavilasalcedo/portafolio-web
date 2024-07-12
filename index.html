@@ -29,40 +29,19 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <!--Section hero-->
-    <section id="home" class="hero">
+    <section id="home" class="main-section">
 
-      <div class="hero__container">
 
-        <div class="hero__header">
-          <div class="hero__image-container">
-            <img src="images/yo.png" alt="Imagen de Jose Davila" class="hero__image">
-          </div>
-          <div class="hero__header-icons">
-            <div class="icon-text">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
-                <path fill="#666666"
-                  d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21zm6-15h4V4h-4z" />
-              </svg>
-              <span>Disponible</span>
-            </div>
-            <div class="icon-text">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
-                <path fill="#666666"
-                  d="M16.997 15c-1.601 0-2.446-.676-3.125-1.219c-.567-.453-.977-.781-1.878-.781c-.898 0-1.287.311-1.874.78c-.679.544-1.524 1.22-3.125 1.22s-2.444-.676-3.123-1.22C3.285 13.311 2.897 13 2 13v5c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-5c-.899 0-1.288.311-1.876.781c-.68.543-1.525 1.219-3.127 1.219M19 5h-6V2h-2v3H5C3.346 5 2 6.346 2 8v3c1.6 0 2.443.676 3.122 1.22c.587.469.975.78 1.873.78c.899 0 1.287-.311 1.875-.781c.679-.543 1.524-1.219 3.124-1.219c1.602 0 2.447.676 3.127 1.219c.588.47.977.781 1.876.781c.9 0 1.311-.328 1.878-.781C19.554 11.676 20.399 11 22 11V8c0-1.654-1.346-3-3-3" />
-              </svg>
-              <span>Junio 12</span>
-            </div>
-          </div>
-        </div>
-
-        <h1 class="hero__title">Soy <span class="hero__title--highlight">Jose Davila</span></h1>
-        <h2 class="hero__subtitle">Ingeniero de software | Desarrollador Frontend Junior✨</h2>
-        <p class="hero__description">+6 meses de experiencia. de Magangue Bolívar, Colombia 🇨🇴.</p>
-        <div class="hero__contact">
-          <div class="hero__contact-email--container">
-            <p class="hero__contact-email">josedavilasalcedo97@gmail.com</p>
+        <div class="main__container">
+          <h1 class="main__title">Soy <span class="hero__title--highlight">Jose Davila</span></h1>
+          <h2 class="main__subtitle">Ingeniero de Software | Desarrollador Frontend Junior ✨</h2>
+          <p class="main__description"> Más de 6 meses de experiencia en desarrollo de aplicaciones web. De Magangué, Bolívar, Colombia 🇨🇴. Apasionado por crear soluciones innovadoras y eficientes.</p>
+  
+          <div class="contact">
+          <div class="email-container">
+            <p class="email">josedavilasalcedo97@gmail.com</p>
             <button class="hero__contact-button" onclick="copyEmail()">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
                 <path fill="#666666"
@@ -75,11 +54,26 @@
           <a href="https://www.linkedin.com/in/jose-davilas/ " target="_blank"
             class="hero__contact-download"><span>LinkedIn</span>
           </a>
+          </div>
         </div>
-      </div>
+
+        <div class="main__header">
+          <div class="image-container">
+            <img src="images/yo.png" alt="Foto de Jose Davila" class="hero__image">
+          </div>
+          <div class="hero__header-icons">
+            <div class="icon-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                <path fill="#666666"
+                  d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21zm6-15h4V4h-4z" />
+              </svg>
+              <span class="neon-text">available to work</span>
+            </div>
+          </div>
+        </div>
     </section>
     <!--Section hero end-->
-
+    <hr class="neon-hr">
     <!--Section Experiencia laboral-->
     <section id="experience" class="experience">
       <div class="experience__title">
@@ -95,7 +89,7 @@
           <h4 class="experience__subtitle">Bonmetique Colombia</h4>
           <time datetime="">15 de agosto 2023.</time>
         </div>
-        <div>
+        <div class="experience__text">
           <p>Trabajé en proyectos de desarrollo web, ofreciendo soluciones personalizadas y asegurando la satisfacción
             del cliente.
             Perfeccioné mis habilidades técnicas y mi capacidad para gestionar proyectos y cumplir plazos.
@@ -104,7 +98,7 @@
       </div>
     </section>
     <!--Fin Experiencia laboral-->
-
+        <hr class="neon-hr">
     <!--Section proyectos-->
     <section id="portfolio" class="project">
       <div class="experience__title">
@@ -144,7 +138,7 @@
 
     </section>
     <!--Fin proyectos-->
-
+        <hr class="neon-hr">
     <!--Section skill-->
     <section id="skill" class="skill">
       <div class="experience__title">
@@ -183,7 +177,7 @@
 
     </section>
     <!--Section skill fin-->
-
+        <hr class="neon-hr">
     <!--Section acerca de mi-->
     <section id="about" class="about">
       <div class="experience__title">
@@ -219,7 +213,7 @@
       </div>
     </section>
     <!--Section acerca de mi fin-->
-
+    
     <footer class="footer">
       <small class="footer__text">© 2024 Creado por Jose Davila.</small>
     </footer>

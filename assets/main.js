@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function copyEmail() {
   // Selecciona el elemento que contiene el correo electrónico
-  const emailElement = document.querySelector('.hero__contact-email');
+  const emailElement = document.querySelector('.email');
   const email = emailElement.textContent;
 
   navigator.clipboard.writeText(email).then(() => {
